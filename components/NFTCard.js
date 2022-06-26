@@ -1,3 +1,4 @@
+import React from "react";
 import { View, Image, Text } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
@@ -16,7 +17,12 @@ const NFTCard = ({ data }) => {
         ...SHADOWS.dark,
       }}
     >
-      <View style={{ width: "100%", height: 250 }}>
+      <View
+        style={{
+          width: "100%",
+          height: 250,
+        }}
+      >
         <Image
           source={data.image}
           resizeMode='cover'
@@ -28,7 +34,7 @@ const NFTCard = ({ data }) => {
           }}
         />
       </View>
-      <Text>NFTCard</Text>
+      <Text>{data.name}</Text>
     </View>
   );
 };
