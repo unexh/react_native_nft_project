@@ -9,4 +9,3 @@ const FocusStatusBar = (props) => {
 };
 
 export default FocusStatusBar;
-vc;
